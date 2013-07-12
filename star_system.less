@@ -1,0 +1,27 @@
+.star_system {
+  > a.star {
+    display: block;
+    float:left;
+    padding: 0;
+    width: 22px;
+    height: 21px;
+    margin:0 2px 0 2px;
+    background: url('stars.png') 0 0 no-repeat;
+
+    &.active{
+      background: url('stars.png') -22px 0 no-repeat;
+      &.red {
+        background: url('stars.png') -44px 0 no-repeat;
+      }
+      &.green {
+        background: url('stars.png') -66px 0 no-repeat;
+      }
+      &.purple {
+        background: url('stars.png') -88px 0 no-repeat;
+      }
+      &.blue {
+        background: url('stars.png') -110px 0 no-repeat;
+      }
+    }
+  }
+}
